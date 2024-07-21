@@ -9,28 +9,15 @@
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <!--! css link -->
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./js/index.js">
+
   <!--todo tailwind cdn link -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ["Inter", "sans-serif"], // Add Inter to the sans font family
-          },
-          colors: {
-            clifford: "#da373d",
-          },
-          aspectRatio: {
-            '9/10': '9/10',
-          },
-        },
-      },
-    };
-  </script>
+
 
   <title>Blue Logoon</title>
 </head>
@@ -56,10 +43,10 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-      <a href="#"
+      <a href="./bilef.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Our
         belief</a>
-      <a href="#"
+      <a href="./about.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">About
         us</a>
       <a href=" #"
@@ -117,10 +104,10 @@
       </div>
       <ul class="hidden lg:flex items-center flex-wrap justify-center flex-1 space-x-5 flex text-blue-400">
         <li>
-          <a href="/" class="mr-14">Our belief</a>
+          <a href="./bilef.html" class="mr-14">Our belief</a>
         </li>
         <li>
-          <a href="/" class="mr-14">About us</a>
+          <a href="./about.html" class="mr-14">About us</a>
         </li>
         <li>
           <a href="/" class="mr-14">Privacy Policy</a>
@@ -133,10 +120,10 @@
     </div>
     <ul class="hidden mt-3 md:flex lg:hidden items-center w-full flex-wrap justify-center flex-row text-blue-400">
       <li class="w-1/4 text-center">
-        <a href="/" class="mr-14">Our belief</a>
+        <a href="./bilef.html" class="mr-14">Our belief</a>
       </li>
       <li class="w-1/4 text-center">
-        <a href="/" class="mr-14">About us</a>
+        <a href="./about.html" class="mr-14">About us</a>
       </li>
       <li class="w-1/4 text-center">
         <a href="/" class="mr-14">Privacy Policy</a>
@@ -154,28 +141,7 @@
 
   <script src="./js/index.js"></script>
   <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    const closeMenu = document.getElementById('close-menu');
 
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-
-    closeMenu.addEventListener('click', () => {
-      menu.classList.add('hidden');
-    });
-
-    const overlay = document.getElementById('overlay');
-    const closeOverlay = document.getElementById('close-overlay');
-
-    // Show the overlay
-    overlay.classList.remove('hidden');
-
-    // Close the overlay when the close button is clicked
-    closeOverlay.addEventListener('click', () => {
-      overlay.classList.add('hidden');
-    });
   </script>
 </body>
 
