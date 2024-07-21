@@ -5,13 +5,14 @@
   background-color: #fff;
   color: #009bff;
 }
-.heading h1 {
+.title h1 {
   font-family: Murecho;
   font-size: 70px;
   font-weight: 700;
 }
-.heading P {
+.title P {
   font-size: 26px;
+  font-family: Murecho;
 }
 .heading-2 {
   margin-top: 137px;
@@ -21,11 +22,11 @@
 
 /* responsiveness */
 @media screen and (max-width: 680px) {
-  .heading h1 {
+  .title h1 {
     font-size: 35px;
     margin-top: 70px;
   }
-  .heading P {
+  .title P {
     font-size: 22px;
   }
   .heading-2 {
