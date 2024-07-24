@@ -13,10 +13,15 @@
 </head>
 
 <body class="p-4 max-w-5xl mx-auto w-full pb-16">
-    <nav class="mx-auto">
+    <nav class="max-w-6xl w-full mx-auto">
         <div class="mx-auto flex justify-between items-center">
-            <button class="text-blue-400 md:hidden flex items-center"><img src="../assets/ios-world-outline.png"
-                    alt="language" style="width: 20px;"> English</button>
+            <div class="text-blue-400 md:hidden flex items-center">
+                <img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> 
+                <select name="language" class="language-select" onchange="toggleLanguage()">
+                  <option value="en">English</option>
+                  <option value="gm">German</option>
+                </select>
+              </div>
             <a href="/" class="flex items-center mr-10">
                 <img src="./assets/logo.png" class="h-10 w-20 obect-cover" alt="logo" />
             </a>
@@ -39,18 +44,15 @@
                     </path>
                 </svg>
             </button>
-            <a href="./bilef.html"
+            <a href="./belief.html"
                 class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Our
                 belief</a>
             <a href="./about.html"
                 class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">About
-                us</a>
-            <a href=" #"
-                class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">About
                 Us</a>
-            <a href="#"
+            <a href="./privacy-policy.html"
                 class="block px-4 py-5 hover:bg-gray-200 border-t border-b border-blue-300 font-bold w-full text-center text-blue-500">Privacy
-                Policy</a><a href="#"
+                Policy</a><a href="./term-condition.html"
                 class="block px-4 py-5 hover:bg-gray-200  border-b border-blue-300 font-bold w-full text-center text-blue-500">Terms
                 and Conditions</a>
         </div>
@@ -904,7 +906,6 @@
             th:not(:last-child) {
                 border-bottom: 2px solid rgba(0, 0, 0, .1);
             }
-
         </style>
 
 
@@ -924,70 +925,113 @@
 
 
 
-<div class="mt-8">
+        <div class="mt-8">
 
-    <p class="mb-4">We may also collect other personal information outside of these categories through instances where you interact with us in person, online, or by phone or mail in the context of:</p>
-    <ul class="list-disc list-inside mb-0">
-        <li class="mt-7">Receiving help through our customer support channels;</li>
-        <li class="mt-7">Participation in customer surveys or contests; and</li>
-        <li class="mt-7">Facilitation in the delivery of our Services and to respond to your inquiries.</li>
-    </ul>
+            <p class="mb-4">We may also collect other personal information outside of these categories through instances
+                where you interact with us in person, online, or by phone or mail in the context of:</p>
+            <ul class="list-disc list-inside mb-0">
+                <li class="mt-7">Receiving help through our customer support channels;</li>
+                <li class="mt-7">Participation in customer surveys or contests; and</li>
+                <li class="mt-7">Facilitation in the delivery of our Services and to respond to your inquiries.</li>
+            </ul>
 
-    <p>We will use and retain the collected personal information as needed to provide the Services or for:</p>
-    <ul class="list-disc list-inside mb-4">
-        <li>Category A - As long as the user has an account with us</li>
-        <li class="mt-7">Category B - As long as the user has an account with us</li>
-        <li class="mt-7">Category C - As long as the user has an account with us</li>
-        <li class="mt-7">Category G - 1 year</li>
-        <li class="mt-7">Category I - As long as the user has an account with us</li>
-        <li class="mt-7">Category J - As long as the user has an account with us</li>
-        <li class="mt-7">Category K - As long as the user has an account with us</li>
-    </ul>
+            <p>We will use and retain the collected personal information as needed to provide the Services or for:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Category A - As long as the user has an account with us</li>
+                <li class="mt-7">Category B - As long as the user has an account with us</li>
+                <li class="mt-7">Category C - As long as the user has an account with us</li>
+                <li class="mt-7">Category G - 1 year</li>
+                <li class="mt-7">Category I - As long as the user has an account with us</li>
+                <li class="mt-7">Category J - As long as the user has an account with us</li>
+                <li class="mt-7">Category K - As long as the user has an account with us</li>
+            </ul>
 
-    <p class="mb-4 font-bold">Sources of Personal Information</p>
-    <p class="mb-4">Learn more about the sources of personal information we collect in "<a href="#information-collection" class="text-green-300">WHAT INFORMATION DO WE COLLECT?</a>"</p>
+            <p class="mb-4 font-bold">Sources of Personal Information</p>
+            <p class="mb-4">Learn more about the sources of personal information we collect in "<a
+                    href="#information-collection" class="text-green-300">WHAT INFORMATION DO WE COLLECT?</a>"</p>
 
-    <p class="mb-4 font-bold">How We Use and Share Personal Information</p>
-    <p class="mb-4">Learn about how we use your personal information in the section, "<a href="#information-processing" class="text-green-300">HOW DO WE PROCESS YOUR INFORMATION?</a>"</p>
+            <p class="mb-4 font-bold">How We Use and Share Personal Information</p>
+            <p class="mb-4">Learn about how we use your personal information in the section, "<a
+                    href="#information-processing" class="text-green-300">HOW DO WE PROCESS YOUR INFORMATION?</a>"</p>
 
-    <p class="mb-4"><strong>Will your information be shared with anyone else?</strong></p>
-    <p class="mb-4">We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information in the section, "<a href="#information-sharing" class="text-green-300">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>"</p>
-    <p class="mb-4">We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.</p>
-    <p class="mb-4">We have not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. We will not sell or share personal information in the future belonging to website visitors, users, and other consumers.</p>
+            <p class="mb-4"><strong>Will your information be shared with anyone else?</strong></p>
+            <p class="mb-4">We may disclose your personal information with our service providers pursuant to a written
+                contract between us and each service provider. Learn more about how we disclose personal information in
+                the section, "<a href="#information-sharing" class="text-green-300">WHEN AND WITH WHOM DO WE SHARE YOUR
+                    PERSONAL INFORMATION?</a>"</p>
+            <p class="mb-4">We may use your personal information for our own business purposes, such as for undertaking
+                internal research for technological development and demonstration. This is not considered to be
+                "selling" of your personal information.</p>
+            <p class="mb-4">We have not disclosed, sold, or shared any personal information to third parties for a
+                business or commercial purpose in the preceding twelve (12) months. We will not sell or share personal
+                information in the future belonging to website visitors, users, and other consumers.</p>
 
-    <h3 class="mb-2 mt-6 font-bold">Your Rights</h3>
-    <p class="mb-4">You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include:</p>
-    <ul class="list-disc list-inside ms-3 mb-4">
-        <li class="mt-7"><strong>Right to</strong> know whether or not we are processing your personal data</li>
-        <li class="mt-7"><strong>Right to access</strong> your personal data</li>
-        <li class="mt-7"><strong>Right to correct</strong> inaccuracies in your personal data</li>
-        <li class="mt-7"><strong>Right to request</strong> the deletion of your personal data</li>
-        <li class="mt-7"><strong>Right to obtain a copy</strong> of the personal data you previously shared with us</li>
-        <li class="mt-7"><strong>Right to non-discrimination</strong> for exercising your rights</li>
-        <li class="mt-7"><strong>Right to opt out</strong> of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California’s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")</li>
-    </ul>
-    <p>Depending upon the state where you live, you may also have the following rights:</p>
-    <ul class="list-disc list-inside ms-5 mb-4">
-        <li>Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including California's and Delaware's privacy law)</li>
-        <li class="mt-7">Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including Oregon’s privacy law)</li>
-        <li class="mt-7">Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including California’s privacy law)</li>
-        <li class="mt-7">Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including Florida’s privacy law)</li>
-    </ul>
+            <h3 class="mb-2 mt-6 font-bold">Your Rights</h3>
+            <p class="mb-4">You have rights under certain US state data protection laws. However, these rights are not
+                absolute, and in certain cases, we may decline your request as permitted by law. These rights include:
+            </p>
+            <ul class="list-disc list-inside ms-3 mb-4">
+                <li class="mt-7"><strong>Right to</strong> know whether or not we are processing your personal data</li>
+                <li class="mt-7"><strong>Right to access</strong> your personal data</li>
+                <li class="mt-7"><strong>Right to correct</strong> inaccuracies in your personal data</li>
+                <li class="mt-7"><strong>Right to request</strong> the deletion of your personal data</li>
+                <li class="mt-7"><strong>Right to obtain a copy</strong> of the personal data you previously shared with
+                    us</li>
+                <li class="mt-7"><strong>Right to non-discrimination</strong> for exercising your rights</li>
+                <li class="mt-7"><strong>Right to opt out</strong> of the processing of your personal data if it is used
+                    for targeted advertising (or sharing as defined under California’s privacy law), the sale of
+                    personal data, or profiling in furtherance of decisions that produce legal or similarly significant
+                    effects ("profiling")</li>
+            </ul>
+            <p>Depending upon the state where you live, you may also have the following rights:</p>
+            <ul class="list-disc list-inside ms-5 mb-4">
+                <li>Right to obtain a list of the categories of third parties to which we have disclosed personal data
+                    (as permitted by applicable law, including California's and Delaware's privacy law)</li>
+                <li class="mt-7">Right to obtain a list of specific third parties to which we have disclosed personal
+                    data (as permitted by applicable law, including Oregon’s privacy law)</li>
+                <li class="mt-7">Right to limit use and disclosure of sensitive personal data (as permitted by
+                    applicable law, including California’s privacy law)</li>
+                <li class="mt-7">Right to opt out of the collection of sensitive data and personal data collected
+                    through the operation of a voice or facial recognition feature (as permitted by applicable law,
+                    including Florida’s privacy law)</li>
+            </ul>
 
-    <h3 class="mb-2 mt-6 font-bold">How to Exercise Your Rights</h3>
-    <p class="mb-4">To exercise these rights, you can contact us by visiting help@bluelagoon.com, by emailing us at <a href="mailto:help@bluelagoon.com" class="text-green-300">help@bluelagoon.com</a>, or by referring to the contact details at the bottom of this document.</p>
-    <p class="mb-4">Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.</p>
+            <h3 class="mb-2 mt-6 font-bold">How to Exercise Your Rights</h3>
+            <p class="mb-4">To exercise these rights, you can contact us by visiting help@bluelagoon.com, by emailing us
+                at <a href="mailto:help@bluelagoon.com" class="text-green-300">help@bluelagoon.com</a>, or by referring
+                to the contact details at the bottom of this document.</p>
+            <p class="mb-4">Under certain US state data protection laws, you can designate an authorized agent to make a
+                request on your behalf. We may deny a request from an authorized agent that does not submit proof that
+                they have been validly authorized to act on your behalf in accordance with applicable laws.</p>
 
-    <h3 class="mb-2 mt-6 font-bold">Request Verification</h3>
-    <p class="mb-4">Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.</p>
-    <p class="mb-4">If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
+            <h3 class="mb-2 mt-6 font-bold">Request Verification</h3>
+            <p class="mb-4">Upon receiving your request, we will need to verify your identity to determine you are the
+                same person about whom we have the information in our system. We will only use personal information
+                provided in your request to verify your identity or authority to make the request. However, if we cannot
+                verify your identity from the information already maintained by us, we may request that you provide
+                additional information for the purposes of verifying your identity and for security or fraud-prevention
+                purposes.</p>
+            <p class="mb-4">If you submit the request through an authorized agent, we may need to collect additional
+                information to verify your identity before processing your request and the agent will need to provide a
+                written and signed permission from you to submit such request on your behalf.</p>
 
-    <h3 class="mb-2 mt-6 font-bold">Appeals</h3>
-    <p class="mb-4">Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at help@bluelagoon.com. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+            <h3 class="mb-2 mt-6 font-bold">Appeals</h3>
+            <p class="mb-4">Under certain US state data protection laws, if we decline to take action regarding your
+                request, you may appeal our decision by emailing us at help@bluelagoon.com. We will inform you in
+                writing of any action taken or not taken in response to the appeal, including a written explanation of
+                the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state
+                attorney general.</p>
 
-    <h3 class="mb-2 mt-6">California "Shine The Light" Law</h3>
-    <p class="mb-4">California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "<a href="#contact-us" class="text-green-300">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>"</p>
-</div>
+            <h3 class="mb-2 mt-6">California "Shine The Light" Law</h3>
+            <p class="mb-4">California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our
+                users who are California residents to request and obtain from us, once a year and free of charge,
+                information about categories of personal information (if any) we disclosed to third parties for direct
+                marketing purposes and the names and addresses of all third parties with which we shared personal
+                information in the immediately preceding calendar year. If you are a California resident and would like
+                to make such a request, please submit your request in writing to us by using the contact details
+                provided in the section "<a href="#contact-us" class="text-green-300">HOW CAN YOU CONTACT US ABOUT THIS
+                    NOTICE?</a>"</p>
+        </div>
 
 
     </div>

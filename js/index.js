@@ -71,3 +71,51 @@ function replaceContentWithGerman() {
     }
   });
 }
+
+
+
+
+
+
+
+
+function toggleLanguage() {
+  var selects = document.querySelectorAll(".language-select");
+  var selectedLanguage = null;
+  
+  // Find the selected value of the visible select element
+  selects.forEach(function(select) {
+    if (select.offsetParent !== null) {
+      selectedLanguage = select.value;
+    }
+  });
+
+  if (!selectedLanguage) {
+    return; // No select element is visible, do nothing
+  }
+  
+  var currentUrl = window.location.pathname;
+  var newUrl = "";
+
+  switch (selectedLanguage) {
+    case "en":
+      // Keep the current page for English
+      newUrl = currentUrl.replace("/gm/", "/");
+      break;
+      
+    case "gm":
+      // Toggle to German by adjusting the URL
+      if (!currentUrl.startsWith("/gm/")) {
+        newUrl = "/gm" + currentUrl;
+      }
+      break;
+      
+    default:
+      // Handle any other cases or errors
+      break;
+  }
+
+  if (newUrl !== "") {
+    window.location.href = newUrl;
+  }
+}

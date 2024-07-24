@@ -25,7 +25,13 @@
 <body class="flex flex-col justify-between h-screen">
   <nav class="max-w-6xl w-full mx-auto p-4">
     <div class="mx-auto flex justify-between items-center">
-      <button class="text-blue-400 md:hidden flex items-center"><img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> English</button>
+      <div class="text-blue-400 md:hidden flex items-center">
+        <img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> 
+        <select name="language" class="language-select" onchange="toggleLanguage()">
+          <option value="en">English</option>
+          <option value="gm">German</option>
+        </select>
+      </div>
       <a href="/" class="flex items-center mr-10">
         <img src="./assets/logo.png" class="h-10 w-20 obect-cover" alt="logo" />
       </a>
@@ -43,18 +49,15 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-      <a href="./bilef.html"
+      <a href="./belief.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Our
         belief</a>
       <a href="./about.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">About
-        us</a>
-      <a href=" #"
-        class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">About
         Us</a>
-      <a href="#"
+      <a href="./privacy-policy.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-b border-blue-300 font-bold w-full text-center text-blue-500">Privacy
-        Policy</a><a href="#"
+        Policy</a><a href="./term-condition.html"
         class="block px-4 py-5 hover:bg-gray-200  border-b border-blue-300 font-bold w-full text-center text-blue-500">Terms
         and Conditions</a>
     </div>
@@ -84,39 +87,36 @@
   <!-- hero banner desktop end -->
 
   <footer class="p-4 max-w-6xl mx-auto w-full flex-wrap flex justify-center items-center md:justify-between">
-    <div class="flex items-center justify-between w-full">
+    <div class="flex items-center justify-center md:justify-between w-full">
       <div class="w-[200px] flex gap-5 items-center md:justify-start justify-center">
-        <a href="/">
+        <a href="https://www.instagram.com/the_blue_lagoonapp?igsh=eHlwbDRseTgxbW1x&utm_source=qr">
           <img src="./assets/instagram.png" class="h-5 w-5" />
         </a>
-        <a href="/">
-          <img src="./assets/x.png" class="h-5 w-5" />
-        </a>
-        <a href="/">
-          <img src="./assets/TikTok.png" class="h-5 w-5" />
-        </a>
-        <a href="/">
+        <a href="https://www.linkedin.com/company/blue-lagoon-dating/">
           <img src="./assets/linkedin.png" class="h-5 w-5" />
-        </a>
-        <a href="/">
-          <img src="./assets/facebook.png" class="h-5 w-5" />
         </a>
       </div>
       <ul class="hidden lg:flex items-center flex-wrap justify-center flex-1 space-x-5 flex text-blue-400">
         <li>
-          <a href="./bilef.html" class="mr-14">Our belief</a>
+          <a href="./belief.html" class="mr-14">Our belief</a>
         </li>
         <li>
           <a href="./about.html" class="mr-14">About us</a>
         </li>
         <li>
-          <a href="/" class="mr-14">Privacy Policy</a>
+          <a href="./privacy-policy.html" class="mr-14">Privacy Policy</a>
         </li>
         <li class="mr-0">
-          <a href="/">Terms and Conditions</a>
+          <a href="./term-condition.html">Terms and Conditions</a>
         </li>
       </ul>
-      <button class="flex md:justify-end items-center"><img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> English</button>
+      <div class="text-blue-400 hidden md:flex items-center">
+        <img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> 
+        <select name="language" class="language-select" onchange="toggleLanguage()">
+          <option value="en">English</option>
+          <option value="gm">German</option>
+        </select>
+      </div>
     </div>
     <ul class="hidden mt-3 md:flex lg:hidden items-center w-full flex-wrap justify-center flex-row text-blue-400">
       <li class="w-1/4 text-center">

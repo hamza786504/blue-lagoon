@@ -15,7 +15,13 @@
 <body class="p-4 max-w-5xl mx-auto w-full pb-16">
   <nav class="max-w-6xl w-full mx-auto">
     <div class="mx-auto flex justify-between items-center">
-      <button class="text-blue-400 md:hidden flex items-center"><img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> English</button>
+      <div class="text-blue-400 md:hidden flex items-center">
+        <img src="../assets/ios-world-outline.png" alt="language" style="width: 20px;"> 
+        <select name="language" class="language-select" onchange="toggleLanguage()">
+          <option value="gm">German</option>
+          <option value="en">English</option>
+        </select>
+      </div>
       <a href="/gm" class="flex items-center mr-10">
         <img src="../assets/logo.png" class="h-10 w-20 obect-cover" alt="logo" />
       </a>
@@ -33,15 +39,15 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-      <a href="./bilef.html"
+      <a href="./belief.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Woran
         wir glauben</a>
       <a href="./about.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Über
         uns</a>
-      <a href=" #"
+      <a href="./privacy-policy.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-blue-300 font-bold w-full text-center text-blue-500">Datenschutzrichtlinie</a>
-      <a href="#"
+      <a href="./term-condition.html"
         class="block px-4 py-5 hover:bg-gray-200 border-t border-b border-blue-300 font-bold w-full text-center text-blue-500">AGB
         Policy</a>
     </div>
@@ -72,7 +78,7 @@
     </p>
     <p class="font-bold">Umsatzsteuer-Identifikationsnummer</p>
 
-  <script src="./js/index.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>
